@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a routerLink="employees" class="nav-link" routerLinkActive="active"
+        >Employees Details</a
+      >
+    </li>
+  </ul>
+</nav>
+
+<div class="container">
+  <br />
+  <h2 style="text-align: center;">{{ title }}</h2>
+  <div>
+    <button routerLink="add" class="addButton" routerLinkActive="active" style="vertical-align:middle"><span>      Add New
+    </span>
+    </button>
+  <hr />
+  <div class="card">
+    <div class="card-body">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
